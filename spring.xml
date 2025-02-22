@@ -13,4 +13,36 @@
 		<property name="pincode" value="110001"></property>
 	</bean>
 
+	<bean id="pobj" class="mySpringProject.Utility.Productinfor">
+
+		<property name="pName" value="iphone 16"></property>
+		<property name="pId" value="101"></property>
+		<property name="price" value="1202"></property>
+	</bean>
+	<bean id="pobj1" class="mySpringProject.Utility.Productinfor">
+
+		<property name="pName" value="iphone 16 max"></property>
+		<property name="pId" value="102"></property>
+		<property name="price" value="1205"></property>
+	</bean>
+
+
+	<bean id="oobj1" class="mySpringProject.Utility.OrderInfo">
+
+		<property name="OId" value="101">
+		</property>
+		<property name="oList">
+			<list>
+				<value>Iphone</value>
+				<value>Oppo</value>
+				<value>Realkme</value>
+				<value>Lenevo</value>
+			</list>
+		</property>
+	</bean>
+
+
+
+
+
 </beans>
