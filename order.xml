@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+
+	<!-- bean definitions here -->
+
+	<bean id="customer" class="allConfiguration.Customer">
+		<property name="name" value="Nishant"></property>
+		<property name="emailId" value="Nishant@gmail.com"></property>
+	</bean>
+
+	<bean id="product" class="allConfiguration.Product">
+		<constructor-arg value="101"></constructor-arg>
+		<constructor-arg>
+			<list>
+				<value>Laptop</value>
+				<value>Mobile</value>
+				<value>Keyboard</value>
+				<value>Earbuds</value>
+			</list>
+		</constructor-arg>
+		<constructor-arg ref="customer"></constructor-arg>
+		<constructor-arg ref="cart"></constructor-arg>
+	</bean>
+
+	<bean id="cart" class="allConfiguration.Cart">
+		<property name="itemselect">
+			<set>
+				<value>Laptop</value>
+				<value>Mobile</value>
+				<value>Keyboard</value>
+				<value>Earbuds</value>
+			</set>
+		</property>
+		<property name="itemPrice">
+			<map>
+				<entry key="Laptop"  value="1200.2">
+				</entry>
+				<entry key="Mobile"  value="1800.2">
+				</entry>
+				<entry key="Keyboard" value="1400.2">
+				</entry>
+				<entry key="Earbuds" value="1600.2">
+				</entry>
+			</map>
+		</property>
+	</bean>
+
+
+
+</beans>
