@@ -17,13 +17,18 @@ public class MyApp {
 		ApplicationContext myContainer = new FileSystemXmlApplicationContext(
 				"D:\\MySpringProject\\MySpringProject\\spring.xml");
 
-		
-		
 		Object myObj = myContainer.getBean("address1");
 
 		/* type cast myObj to our Address classs Type */
 
 		Address a = (Address) myObj;
+		System.out.println("First Run of the appliaction......" + a.getLocation());
+		System.out.println("First Run of the appliaction......" + a.getPincode());
+
+		/*
+		 * O/P:: First Run of the appliaction......null First Run of the
+		 * appliaction......0
+		 */
 
 	}
 }
