@@ -6,6 +6,9 @@
 		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
 
-		<!-- bean definitions here -->
+	<!-- bean definitions here -->
+	<!-- created object of Address class by using the XML file -->
+	<bean id="address1" class="mySpringProject.Utility.Address">
+	</bean>
 
 </beans>
