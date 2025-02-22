@@ -22,8 +22,11 @@ public class MyApp {
 		/* type cast myObj to our Address classs Type */
 
 		Address a = (Address) myObj;
-		System.out.println("First Run of the appliaction......" + a.getLocation());
-		System.out.println("First Run of the appliaction......" + a.getPincode());
+
+		a.getAddressFileds();
+
+//		System.out.println("First Run of the appliaction......" + a.getLocation());
+//		System.out.println("First Run of the appliaction......" + a.getPincode());
 
 		/*
 		 * O/P:: First Run of the appliaction......null First Run of the

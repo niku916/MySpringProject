@@ -9,6 +9,8 @@
 	<!-- bean definitions here -->
 	<!-- created object of Address class by using the XML file -->
 	<bean id="address1" class="mySpringProject.Utility.Address">
+		<property name="location" value="New Delhi"></property>
+		<property name="pincode" value="110001"></property>
 	</bean>
 
 </beans>
